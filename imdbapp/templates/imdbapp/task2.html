@@ -1,0 +1,21 @@
+{% extends 'imdbapp/base.html' %}
+{% block content %}
+{% if genres %}
+<h5 style="text-align: center"></h5><br>
+<div class="row mx-2">
+    {% for key, value in genres.items %}
+    <div class="col-12 col-sm-6 col-md-4 px-2 mb-3">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">{{key}}</h5>
+                <p class="card-text">{{value}}
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% else %}
+<p>No movie available.</p>
+{% endif %}
+{% endblock %}

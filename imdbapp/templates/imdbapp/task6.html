@@ -1,0 +1,22 @@
+{% extends 'imdbapp/base.html' %}
+{% block content %}
+{% if stars_dict %}
+<h5 style="text-align: center"></h5><br>
+<div class="row mx-2">
+    {% for key, value in stars_dict.items %}
+    <div class="col-12 col-sm-6 col-md-4 px-2 mb-3">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">{{key}}</h3>
+                {% for val in value %}
+                <p class="card-text">{{val}}</p>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% else %}
+<p>No movie available.</p>
+{% endif %}
+{% endblock %}

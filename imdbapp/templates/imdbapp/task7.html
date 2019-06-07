@@ -1,0 +1,27 @@
+{% extends 'imdbapp/base.html' %}
+{% block content %}
+<form action="/task7/" method="POST">{% csrf_token %}
+	<select name="genres">
+		{% for genre in genres %}
+		<option value="{{genre}}">{{genre}}</option>
+		{% endfor %}
+	</select>
+	<input type="submit">
+</form>
+{% if movies %}
+<h4 style="text-align: center">{{category}}</h4>
+<div class="row mx-2">
+	{% for movie in movies %}
+	<div class="col-12 col-sm-6 col-md-4 px-2 mb-3">
+		<div class="card">
+			<div class="card-body">
+				<h5 class="card-title">{{movie}}</h5>
+			</div>
+		</div>
+	</div>
+	{% endfor %}
+</div>
+{% else %}
+<p>No movies available.</p>
+{% endif %}
+{% endblock %}

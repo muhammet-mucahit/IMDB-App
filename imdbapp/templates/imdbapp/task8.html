@@ -1,0 +1,27 @@
+{% extends 'imdbapp/base.html' %}
+{% block content %}
+<form action="/task8/" method="POST">{% csrf_token %}
+	<input type="text" name="genre" placeholder="GENRE" required>
+	<input type="text" name="year" placeholder="YEAR" required>
+	<input type="text" name="director" placeholder="DIRECTOR" required>
+	<input type="text" name="star" placeholder="STAR" required>
+	<input type="submit">
+</form>
+{% if movies %}
+{{movies}}
+<!-- <h4 style="text-align: center">{{category}}</h4>
+<div class="row mx-2">
+	{% for movie in movies %}
+	<div class="col-12 col-sm-6 col-md-4 px-2 mb-3">
+		<div class="card">
+			<div class="card-body">
+				<h5 class="card-title">{{movie}}</h5>
+			</div>
+		</div>
+	</div>
+	{% endfor %}
+</div> -->
+{% else %}
+<p>No movies available.</p>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends 'imdbapp/base.html' %}
+{% block content %}
+    {% if movies %}
+    <div class="row mx-2">
+        {% for movie in movies %}
+        <div class="col-12 col-sm-6 col-md-4 px-2 mb-3">
+            <div class="card">
+                <img src="{{movie.image}}" class="img-fluid" style="padding: 
+30px" alt="{{movie.name}}">
+                <div class="card-body">
+                    <h5 class="card-title">{{movie.name}}</h5>
+                    <p class="card-text">
+                        IMDB: {{movie.imdb}}
+                    </p>
+                    <!-- <a href="/" class="btn btn-primary">Buy Now</a> -->
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% else %}
+    <p>No movies available.</p>
+    {% endif %}
+{% endblock %}

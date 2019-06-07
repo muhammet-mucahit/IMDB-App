@@ -1,0 +1,21 @@
+{% extends 'imdbapp/base.html' %}
+{% block content %}
+    {% if movie %}
+    <h3 style="text-align: center">{{movie}}</h3>
+    <h5 style="text-align: center">{{director}}</h5><br>
+    <h5 style="text-align: center">CAST</h5><br>
+    <div class="row mx-2">
+        {% for star in starring %}
+        <div class="col-12 col-sm-6 col-md-4 px-2 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">{{star}}</h5>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% else %}
+    <p>No movie available.</p>
+    {% endif %}
+{% endblock %}
