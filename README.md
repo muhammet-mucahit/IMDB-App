@@ -56,23 +56,23 @@ python manage.py runserver
 
 ## Tasks
 
-0. Login, signup, admin panel and email verification with Auth0.
+- [x] Task 0. Login, signup, admin panel and email verification with Auth0.
 
-1. (Basic Details Query) List the details of cast and director of the film called "X-Men 2".
+- [x] Task 1. (Basic Details Query) List the details of cast and director of the film called "X-Men 2".
 
-2. (Group by and Aggregate) List all genre values ​​in the system and list the average of years they were released.
+- [x] Task 2. (Group by and Aggregate) List all genre values ​​in the system and list the average of years they were released.
 
-3. (Get Details from App and Query) List actors and movies which have the same name as the logged-in user's name or surname.
+- [x] Task 3. (Get Details from App and Query) List actors and movies which have the same name as the logged-in user's name or surname.
 
-4. (Basic Query + Full Text + Aggregation of Strings) Find the films directed by "Bryan Singer" and make full text search to list the most important actors in the films.
+- [x] Task 4. (Basic Query + Full Text + Aggregation of Strings) Find the films directed by "Bryan Singer" and make full text search to list the most important actors in the films.
 
-5. (Python Text Operation + Query) Clear the suffixes of words in the "Atatürk’ün Gençliğe Hitabesi" by using NLTK and Turkish Stemming. Then list all movie names that contain these words, even if they are additional.
+- [x] Task 5. (Python Text Operation + Query) Clear the suffixes of words in the "Atatürk’ün Gençliğe Hitabesi" by using NLTK and Turkish Stemming. Then list all movie names that contain these words, even if they are additional.
 
-6. (Complex Query + Regex + Extra Iteration) List the names of the actors who played the most in the films which include "man" in their names but not "woman" and the list the other films in which they acted.
+- [x] Task 6. (Complex Query + Regex + Extra Iteration) List the names of the actors who played the most in the films which include "man" in their names but not "woman" and the list the other films in which they acted.
 
-7. (Getting Input from User to Run Basic Query) List films made before 2013 related to any genre value that user will provide.
+- [x] Task 7. (Getting Input from User to Run Basic Query) List films made before 2013 related to any genre value that user will provide.
 
-8. (Advanced Query Builder to Run Basic Queries)
+- [x] Task 8. (Advanced Query Builder to Run Basic Queries)
 
 ## Screenshots
 
