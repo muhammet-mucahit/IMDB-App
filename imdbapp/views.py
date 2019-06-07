@@ -438,7 +438,7 @@ def logout(request):
     domain = 'dev-uu11qs8p.auth0.com'
     client_id = 'NeKNCgWz77crLY17j3fh4KKbYii3D8kj'
     # After logout return to the url
-    return_to = 'YOUR_AUTH0_ALLOWED_LOGOUT_URL (127.0.0.1:8000)'
+    return_to = 'YOUR_AUTH0_ALLOWED_LOGOUT_URL (http://127.0.0.1:8000)'
     # FILL IT
     
     return HttpResponseRedirect(f'https://{domain}/v2/logout?client_id={client_id}&returnTo={return_to}')
