@@ -40,12 +40,12 @@ function (user, context, callback) {
 }
 ```
 - Constuct your Dgraph IMDB Database ([Load IMDB Database To Dgraph](https://tour.dgraph.io/moredata/1/))
-- Find **# FILL IT** comments in code and change some informations with yours
 
 ## Setup Repo
 ```
 git clone https://github.com/muhammet-mucahit/IMDB-App.git
 cd IMDB-App
+Find **# FILL IT** comments in code and change some informations with yours
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
